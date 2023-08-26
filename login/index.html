@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Login</h1>
+            <table>
+                <tr>
+                    <td>
+                        <label for="user_name">Username :</label>
+                    </td>
+                    <td>
+                        <input type="text" id="user_name" placeholder="Type your username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password :</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pass" placeholder="Enter a strong password"
+                            pattern="(?=.*[!@#$%^&*-+=_])(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" required>
+                    </td>
+                </tr>
+            </table>
+            <div id="Forgot-password">
+                <a href="#">Forgot password ?</a>
+            </div>
+            <input type="button" value="Login" id="btn1" onClick="window.location.reload();">
+            <p id="other_option">Or Sign Up Using</p>
+            <div id="icon">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook " id="facebook"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope" id="email"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" id="twitter"></i></a>
+            </div>
+            <button id="btn2">Sign Up</button>
+        </div>
+    </div>
+</body>
+<script>
+    // document.getElementById("btn1").onclick = function() { 
+    //     alert("hii")
+    //  }
+</script>
+</html>
